@@ -18,7 +18,8 @@ git clone https://github.com/yingshuai-zhao/DGD.git
 2. Create a Conda environment with Python 3.10:
 
 ```bash
-git clone https://github.com/yingshuai-zhao/DGD.git
+conda create -n DGD python=3.10
+conda activate DGD
 ```
 
 3. Install the required packages from 'requirements.txt'
