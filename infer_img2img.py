@@ -79,7 +79,7 @@ if __name__ == "__main__":
     )
     pipe.cuda()
     pipe.load_ip_adapter_anon(
-        './ruohua_all/checkpoint-180000/pytorch_model.bin',
+        './ruohua/checkpoint-180000/pytorch_model.bin',
         './qianghua/checkpoint-200000/pytorch_model.bin',
         CLIPVisionModelWithProjection.from_pretrained('path/to/your/ipa/models/image_encoder')
     )
