@@ -1,0 +1,3 @@
+accelerate launch --mixed_precision "fp16"  tutorial_train-anon_step1.py   --mixed_precision="fp16"  --train_batch_size=20  --dataloader_num_workers=8  --learning_rate=1e-05 --weight_decay=0.01  --save_steps=5000 --output_dir stage1
+accelerate launch --mixed_precision "fp16"  tutorial_train-anon_step2_1.py   --mixed_precision="fp16"  --train_batch_size=8  --dataloader_num_workers=8  --learning_rate=1e-05 --weight_decay=0.01  --save_steps=5000 --output_dir qianghua
+accelerate launch --mixed_precision "fp16"  tutorial_train-anon_step2_2.py   --mixed_precision="fp16"  --train_batch_size=8  --dataloader_num_workers=8  --learning_rate=1e-05 --weight_decay=0.01  --save_steps=5000 --output_dir ruohua
